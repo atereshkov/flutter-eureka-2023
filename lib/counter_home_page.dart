@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dive_back/counter_cubit/counter_cubit.dart';
+import 'package:flutter_dive_back/counter_bloc/counter_bloc.dart';
 
 class CounterHomePage extends StatelessWidget {
   const CounterHomePage({super.key});
@@ -8,7 +9,7 @@ class CounterHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        // backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Counter Home"),
       ),
       body: Center(
@@ -29,7 +30,7 @@ class CounterHomePage extends StatelessWidget {
               onPressed: () {
                  Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const CounterPageCubit()),
+                  MaterialPageRoute(builder: (context) => const CounterPageBloc()),
                 );
               },
             ),
