@@ -5,13 +5,15 @@ import 'view.dart';
 import 'cubit.dart';
 
 class CounterPageCubit extends StatelessWidget {
-  const CounterPageCubit({super.key});
+  const CounterPageCubit({super.key, required this.title});
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (_) => CounterCubit(),
-      child: const CounterViewCubit(),
+      child: CounterViewCubit(title: title),
     );
   }
 }

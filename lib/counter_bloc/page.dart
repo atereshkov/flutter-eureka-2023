@@ -5,13 +5,15 @@ import 'view.dart';
 import 'bloc.dart';
 
 class CounterPageBloc extends StatelessWidget {
-  const CounterPageBloc({super.key});
+  const CounterPageBloc({super.key, required this.title});
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (_) => CounterBloc(),
-      child: const CounterViewBloc(),
+      child: CounterViewBloc(title: title),
     );
   }
 }

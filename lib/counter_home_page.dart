@@ -9,7 +9,6 @@ class CounterHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Counter Home"),
       ),
       body: Center(
@@ -17,20 +16,20 @@ class CounterHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-              child: const Text('Cubit'),
+              child: const Text('Counter Cubit'),
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const CounterPageCubit()),
+                  MaterialPageRoute(builder: (context) => const CounterPageCubit(title: 'Counter Cubit')),
                 );
               },
             ),
             ElevatedButton(
-              child: const Text('BLoC'),
+              child: const Text('Counter BLoC'),
               onPressed: () {
                  Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const CounterPageBloc()),
+                  MaterialPageRoute(builder: (context) => const CounterPageBloc(title: 'Counter Bloc')),
                 );
               },
             ),
