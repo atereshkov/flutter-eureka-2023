@@ -123,7 +123,7 @@ unlinked_spec.ds
 **/linux/flutter/generated_plugins.cmake
 
 # Coverage
-coverage/
+# coverage/
 
 # Symbols
 app.*.symbols
