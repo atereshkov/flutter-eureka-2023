@@ -16,6 +16,7 @@ class CounterHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
+              key: const Key('home_button_cubit'),
               child: const Text('Counter Cubit'),
               onPressed: () {
                 Navigator.push(
@@ -25,6 +26,7 @@ class CounterHomePage extends StatelessWidget {
               },
             ),
             ElevatedButton(
+              key: const Key('home_button_bloc'),
               child: const Text('Counter BLoC'),
               onPressed: () {
                  Navigator.push(
