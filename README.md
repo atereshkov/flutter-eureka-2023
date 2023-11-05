@@ -5,7 +5,13 @@ Reacquainting with modern Flutter &amp; BLoC. Diving back into the Flutter ecosy
 
 ### Run tests with coverage
 
+Run unit tests:
+
 ```flutter test --coverage```
+
+Run integration tests:
+
+```flutter test test_integration```
 
 ### Generate coversage report
 
